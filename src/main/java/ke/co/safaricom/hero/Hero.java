@@ -6,6 +6,7 @@ public class Hero {
     private int age;
     private String specialPower;
     private String weakness;
+    private Squad squad;
 
     public String getName() {
         return name;
@@ -39,4 +40,11 @@ public class Hero {
         this.weakness = weakness;
     }
 
+    public Squad getSquad() {
+        return squad;
+    }
+
+    public void setSquad(Squad squad) {
+        this.squad = squad;
+    }
 }
