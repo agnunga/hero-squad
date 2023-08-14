@@ -1,4 +1,4 @@
-package ke.co.safaricom.hero;
+package ke.co.saf.hero;
 
 public class Hero {
 
