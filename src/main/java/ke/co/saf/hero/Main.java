@@ -33,8 +33,15 @@ public class Main {
             Map<String, Object> model = new HashMap<String, Object>();
             String name = request.queryParams("name");
             String age = request.queryParams("age");
+            String power = request.queryParams("power");
+            String weakness = request.queryParams("weakness");
+            String squad = request.queryParams("squad");
             model.put("name", name);
             model.put("age", age);
+            model.put("power", power);
+            model.put("weakness", weakness);
+            model.put("squad", squad);
+
             return new ModelAndView(model, "list-heroes.hbs");
         }, new HandlebarsTemplateEngine());
 
