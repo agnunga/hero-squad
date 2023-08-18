@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to Hero Squad</title>
-</head>
-<body>
+{{#partial "title" }}
+    Hero Squad | Welcome
+{{/partial}}
 
+{{#partial "content"}}
     <h1>Welcome to Hero Squad hbs updated</h1>
 
-</body>
-</html>
+{{/partial}}
+
+{{> layout.hbs }}
