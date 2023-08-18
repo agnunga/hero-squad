@@ -4,10 +4,17 @@ public class Hero {
 
     private String name;
     private int age;
-    private Power specialPower;
+
+
+    private String specialPower;
+    private String weakness;
+    private String squad;
+
+    /*
+   private Power specialPower;
     private Weakness weakness;
     private Squad squad;
-
+    */
     public String getName() {
         return name;
     }
@@ -24,6 +31,31 @@ public class Hero {
         this.age = age;
     }
 
+    public String getSpecialPower() {
+        return specialPower;
+    }
+
+    public void setSpecialPower(String specialPower) {
+        this.specialPower = specialPower;
+    }
+
+    public String getWeakness() {
+        return weakness;
+    }
+
+    public void setWeakness(String weakness) {
+        this.weakness = weakness;
+    }
+
+    public String getSquad() {
+        return squad;
+    }
+
+    public void setSquad(String squad) {
+        this.squad = squad;
+    }
+
+    /*
     public Power getSpecialPower() {
         return specialPower;
     }
@@ -47,9 +79,11 @@ public class Hero {
     public void setSquad(Squad squad) {
         this.squad = squad;
     }
+    */
 
 }
 
+/*
 enum Power{
     FLIGHT,
     STRENGTH,
@@ -65,3 +99,4 @@ enum Weakness{
     ANGER,
     FORGETFULNESS
 }
+*/

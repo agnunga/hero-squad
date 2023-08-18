@@ -3,7 +3,9 @@ package ke.co.saf.hero;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.*;
@@ -12,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Here we are updated...");
 
+        List heroes = new ArrayList<Hero>();
 
         staticFileLocation("/public");
 
@@ -30,17 +33,20 @@ public class Main {
 
             System.out.println(request.queryParams());
 
+            Hero hero = new Hero();
+
             Map<String, Object> model = new HashMap<String, Object>();
-            String name = request.queryParams("name");
-            String age = request.queryParams("age");
-            String power = request.queryParams("power");
-            String weakness = request.queryParams("weakness");
-            String squad = request.queryParams("squad");
-            model.put("name", name);
-            model.put("age", age);
-            model.put("power", power);
-            model.put("weakness", weakness);
-            model.put("squad", squad);
+            hero.setName( request.queryParams("name"));
+            hero.setAge(Integer.parseInt(request.queryParams("age")));
+            hero.setSpecialPower( request.queryParams("power"));
+            hero.setWeakness( request.queryParams("weakness"));
+            hero.setSquad( request.queryParams("squad"));
+
+            model.put("name", hero.getName());
+            model.put("age", hero.getAge());
+            model.put("power", hero.getSpecialPower());
+            model.put("weakness", hero.getWeakness());
+            model.put("squad", hero.getSquad());
 
             return new ModelAndView(model, "list-heroes.hbs");
         }, new HandlebarsTemplateEngine());

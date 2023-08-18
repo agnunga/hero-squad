@@ -12,6 +12,30 @@
     <p>weakness: {{ weakness }}</p>
     <p>squad: {{ squad }}</p>
 
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">name</th>
+            <th scope="col">age</th>
+            <th scope="col">power</th>
+            <th scope="col">weakness</th>
+            <th scope="col">squad</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>{{ name }}</td>
+            <td>{{ age }}</td>
+            <td>{{ power }}</td>
+            <td>{{ weakness }}</td>
+            <td>{{ squad }}</td>
+        </tr>
+        </tbody>
+    </table>
+
 {{/partial}}
 
 {{> layout.hbs}}
