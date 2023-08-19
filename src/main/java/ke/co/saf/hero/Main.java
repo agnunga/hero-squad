@@ -42,6 +42,9 @@ public class Main {
             hero.setWeakness( request.queryParams("weakness"));
             hero.setSquad( request.queryParams("squad"));
 
+            //add the hero to the list of heroes -
+            heroes.add(hero);
+
             model.put("name", hero.getName());
             model.put("age", hero.getAge());
             model.put("power", hero.getSpecialPower());
