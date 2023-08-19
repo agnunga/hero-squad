@@ -3,6 +3,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+!build/libs/hero-squad-1.0-SNAPSHOT.jar
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
