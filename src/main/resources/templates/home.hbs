@@ -1,10 +1,30 @@
 {{#partial "title" }}
-    Hero Squad | Welcome
+    Hero Squad | Welcome | List Squads
 {{/partial}}
 
 {{#partial "content"}}
-    <h1>Welcome to Hero Squad hbs updated</h1>
 
 {{/partial}}
-
-{{> layout.hbs }}
+{{> layout.hbs}}
+<h2>Welcome to Hero Squad!</h2>
+<h3>List of Squads</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Maximum Size</th>
+        <th scope="col">Dedicated Cause</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each squads}}
+        <tr>
+            <th scope="row">1</th>
+            <td>{{ name }}</td>
+            <td>{{ maxSize }}</td>
+            <td>{{ dedicatedCause }}</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

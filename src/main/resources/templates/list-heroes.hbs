@@ -1,30 +1,26 @@
 {{#partial "title" }}
-    Your custom greeting
+    Hero squad | List heroes
 {{/partial}}
 
-
 {{#partial "content"}}
+{{/partial}}
 
-    <h1>Hero Added</h1>
-    <p>Name: {{ name }},</p>
-    <p>Age: {{ age }}</p>
-    <p>power: {{ power }}</p>
-    <p>weakness: {{ weakness }}</p>
-    <p>squad: {{ squad }}</p>
+{{> layout.hbs}}
 
-
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">name</th>
-            <th scope="col">age</th>
-            <th scope="col">power</th>
-            <th scope="col">weakness</th>
-            <th scope="col">squad</th>
-        </tr>
-        </thead>
-        <tbody>
+<h3>List of Heroes</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">age</th>
+        <th scope="col">power</th>
+        <th scope="col">weakness</th>
+        <th scope="col">squad</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each heroes}}
         <tr>
             <th scope="row">1</th>
             <td>{{ name }}</td>
@@ -32,10 +28,8 @@
             <td>{{ power }}</td>
             <td>{{ weakness }}</td>
             <td>{{ squad }}</td>
+
         </tr>
-        </tbody>
-    </table>
-
-{{/partial}}
-
-{{> layout.hbs}}
+    {{/each}}
+    </tbody>
+</table>

@@ -15,6 +15,18 @@ public class Hero {
     private Weakness weakness;
     private Squad squad;
     */
+
+    public Hero(String name, int age, String specialPower, String weakness, String squad) {
+        this.name = name;
+        this.age = age;
+        this.specialPower = specialPower;
+        this.weakness = weakness;
+        this.squad = squad;
+    }
+
+    public Hero() {
+    }
+
     public String getName() {
         return name;
     }
