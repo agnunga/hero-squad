@@ -1,24 +1,47 @@
 # Project name
-## Hero Squad
+### Hero Squad
 
-# Project description.
+## Project description.
 An app that allows you to recruit a well-balanced team of superhero of choice. 
 
-# Author information
-### Godfrey Agunga
+## Author information
+#### Godfrey Agunga
 
-# Setup instructions
-URL : https://hero-squad-vlbf.onrender.com/add-hero
-Git URL : https://github.com/agnunga/hero-squad.git
+## Website URL
+https://hero-squad-vlbf.onrender.com/add-hero
 
-# Technologies used
-Java
-Handlebars
-Javascript
-CSS
+## Setup instructions
+Pull the code from Github repository : https://github.com/agnunga/hero-squad.git
 
-# Contact information.
-### agunga3d@gmail.com
+## Prerequisites
+Docker and Gradle should be installed
 
-# Copyright
-### (c) agunga3d
+### Steps
+#### Gradle build
+```bash
+gradle build
+```
+
+#### Build a docker image
+```bash
+docker build -t hero-squad .
+```
+
+#### run docker image
+```bash
+docker run -dp 127.0.0.1:4567:4567 hero-squad
+```
+
+#### Gradle build
+```bash
+gradle build
+```
+
+## Technologies used
+Java, Spark Framework, Handlebars, Javascript, CSS
+
+## Contact information.
+#### agunga3d@gmail.com
+
+## Copyright
+#### (c) agunga3d
