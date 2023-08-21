@@ -32,9 +32,10 @@ docker build -t hero-squad .
 docker run -dp 127.0.0.1:4567:4567 hero-squad
 ```
 
-#### Gradle build
+#### Stop the running image
 ```bash
-gradle build
+docker ps
+docker stop <Containcer NAME>
 ```
 
 ## Technologies used
