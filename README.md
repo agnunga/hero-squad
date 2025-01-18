@@ -5,7 +5,7 @@
 An app that allows you to recruit a well-balanced team of superhero of choice. 
 
 ## Author information
-#### Godfrey Agunga
+#### Omosh
 
 ## Website URL
 https://hero-squad-vlbf.onrender.com/add-hero
@@ -42,7 +42,7 @@ docker stop <Containcer NAME>
 Java, Spark Framework, Handlebars, Javascript, CSS
 
 ## Contact information.
-#### agunga3d@gmail.com
+#### yolojeya@gmail.com
 
 ## Copyright
-#### (c) agunga3d
+#### (c) omosh
